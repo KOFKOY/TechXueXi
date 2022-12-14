@@ -453,7 +453,7 @@ class Mydriver:
             print("点击进入下一题")
         time.sleep(1)
         if self.driver.find_elements_by_class_name("nc-mask-display"):
-            # self.swiper_valid()
+            self.swiper_valid()
             # print("出现滑块验证。")
             gl.pushprint("出现滑块验证，本次答题结束")
             raise Exception("出现滑块验证。")
